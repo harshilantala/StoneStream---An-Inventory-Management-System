@@ -1,1 +1,1 @@
-# StoneStream---An-Inventory-Management-System
+# Stone_Stream

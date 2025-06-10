@@ -1,0 +1,98 @@
+/* Page Wrapper for Centering */
+.purchase-page-wrapper {
+    padding-left: 320px;
+    
+    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #eaeaea;
+}
+
+/* Card Container */
+.purchase-container {
+    max-width: 700px;
+    width: 100%;
+    margin: 20px;
+    padding: 30px;
+    background-color: #fff; /* White background for card */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Slight shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.purchase-container:hover {
+    /* transform: translateY(-5px); */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Form Styling */
+.purchase-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-gap: 20px; /* Gap between columns */
+}
+
+/* Full Width Inputs for Fields that Span Entire Row */
+.full-width {
+    grid-column: span 2; /* Spans both columns */
+}
+
+/* Individual Form Groups */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333; /* Darker text */
+}
+
+.form-group input, .form-group select {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+.form-group input:focus, .form-group select:focus {
+    border-color: #1D9BF0;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(255, 102, 0, 0.2);
+    outline: none;
+}
+
+/* Date Picker Styling */
+.date-picker {
+    grid-column: span 2; /* Full-width field */
+}
+
+/* Submit Button */
+.submit-btn-p {
+    padding: 12px 24px;
+    background-color: #1D9BF0;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    grid-column: span 2; /* Full width submit button */
+}
+
+.submit-btn-p:hover {
+    background-color: #1D9BF0;
+    transform: translateY(-3px);
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .purchase-form {
+        grid-template-columns: 1fr; /* Single column on mobile */
+    }
+}

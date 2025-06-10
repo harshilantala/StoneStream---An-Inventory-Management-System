@@ -1,0 +1,106 @@
+.profile-settings-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4; /* Light background for contrast */
+}
+
+.profile-settings-container {
+  max-width: 600px; /* Adjusted width for better viewing */
+  width: 100%;
+  margin: 20px;
+  padding: 30px;
+  background-color: #ffffff; /* White background for card */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Slight shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  max-height: 80vh; /* Set a maximum height for the container */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Heading Style */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px; /* Larger font size for prominence */
+  color: #333; /* Darker text for better readability */
+}
+
+/* Form Style */
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Group Styling */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Label Styling */
+.form-group label {
+  font-weight: bold;
+  color: #555; /* Slightly darker for better visibility */
+}
+
+/* Input Styling */
+.form-group input {
+  padding: 12px; /* Increased padding for comfort */
+  border: 1px solid #ccc; /* Slightly darker border */
+  border-radius: 5px;
+  font-size: 16px; /* Increase font size for better readability */
+}
+
+/* Image Section */
+.profile-image-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Profile Image Styling */
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ddd; /* Border around profile image */
+}
+
+/* Button Styling */
+.save-button {
+  padding: 12px; /* Increased padding for better click area */
+  background-color: #1DA1F2; /* Twitter blue color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px; /* Larger font size for the button */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+.save-button:hover {
+  background-color: #0d8cd1; /* Darker blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-settings-container {
+    margin: 10px; /* Reduce margin on smaller screens */
+  }
+
+  h2 {
+    font-size: 20px; /* Smaller font size on mobile */
+  }
+
+  .save-button {
+    font-size: 16px; /* Adjust button font size */
+  }
+}

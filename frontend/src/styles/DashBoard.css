@@ -1,0 +1,99 @@
+/* Dashboard Container */
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+/* Heading */
+.dashboard-container h1 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Error Message */
+.error-message {
+  color: #dc3545;
+  background-color: #f8d7da;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Summary Section */
+.summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.box {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.blue-box h2 {
+  color: #007bff;
+  font-size: 24px;
+}
+
+.box h2 {
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Dropdown for Item Selection */
+.dropdown {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.dropdown label {
+  font-size: 18px;
+  color: #333;
+  margin-right: 10px;
+}
+
+#itemSelect {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Selected Item Details Section */
+.selected-item-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.selected-item-details .box {
+  background-color: #e9f7fe;
+}
+
+.selected-item-details h2 {
+  color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .summary,
+  .selected-item-details {
+      flex-direction: column;
+  }
+
+  .box {
+      margin-bottom: 20px;
+  }
+}

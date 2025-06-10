@@ -1,0 +1,35 @@
+/* src/styles/Footer.css */
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #111D13;
+  color: #fff;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Media query for tablets and larger devices */
+@media (min-width: 768px) {
+  .footer {
+    padding: 30px;
+  }
+
+  .footer p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Media query for desktops and larger devices */
+@media (min-width: 1024px) {
+  .footer {
+    padding: 5px;
+  }
+
+  .footer p {
+    font-size: 1.0rem;
+  }
+}
